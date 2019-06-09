@@ -1,0 +1,15 @@
+.container-fluid {
+  padding: 35px 20px;
+}
+
+.row {
+  margin: 30px auto;
+}
+
+.btn-danger {
+  margin: 0 3px;
+}
+
+#hero-image {
+  height: 300px;
+}
