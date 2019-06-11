@@ -1,5 +1,5 @@
 .container-fluid {
-  padding: 35px 20px;
+  padding: 0px 20px;
 }
 
 .row {
@@ -12,4 +12,10 @@
 
 #hero-image {
   height: 300px;
+}
+
+.form-control {
+  border: 0px;
+  border-bottom: 1px solid #495057;
+  box-shadow: none;
 }

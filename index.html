@@ -15,8 +15,8 @@
         <div><img alt='logo'/></div>
         <div class='d-flex'>
           <a class='nav-link text-uppercase' href='#about-us'>About Us</a>
-          <button type='button' class='btn btn-danger text-uppercase'>donate</button>
-          <button type='button' class='btn btn-danger text-uppercase'>find</button>
+          <button type='button' class='btn btn-danger text-uppercase' data-toggle='modal' data-target='#donateModal'>donate</button>
+          <button type='button' class='btn btn-danger text-uppercase' data-toggle='modal' data-target='#findModal'>find</button>
         </div>
       </header>
       <section class='row'>
@@ -29,6 +29,85 @@
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       </section>
-    </div>
+
+      <!--Donate Modal -->
+      <div class='modal fade' id='donateModal'>
+        <div class='modal-dialog'>
+          <div class='modal-content'>
+            <div class='modal-header'>
+              <h5 class='modal-title'>Donate Now</h5>
+              <button type='button' class='close' data-dismiss='modal'>
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class='modal-body'>
+              <form>
+                <div class='form-group'>
+                  <label for='donorName'>Name</label>
+                  <input type='text' class='form-control' placeholder='Eg. John Smith' />
+                </div>
+                <div class='form-group'>
+                  <label for='donorEmail'>Email</label>
+                  <input type='email' class='form-control' placeholder='xyz@example.com' />
+                </div>
+                <div class='form-group'>
+                  <label for='donorNumber'>Phone No.</label>
+                  <input type='tel' class='form-control' placeholder='1234567890' />
+                </div>
+                <div class='form-group'>
+                  <label for='donoteItems'>Items to donate</label>
+                  <input type='text' class='form-control' placeholder='What you wish to give? Eg.Single Bed' />
+                </div>
+                <div class='form-group'>
+                  <label for='itemDescriptions'>Description</label>
+                  <textarea class='form-control' placeholder='Information about the item-size, color, etc'></textarea>
+                </div>
+              </form>
+            </div>
+            <div class='modal-footer'>
+              <button type='button' class='btn btn-danger'>Donate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Find Modal -->
+      <div class='modal fade' id='findModal'>
+        <div class='modal-dialog'>
+          <div class='modal-content'>
+            <div class='modal-header'>
+              <h5 class='modal-title'>Find Donated Items</h5>
+              <button type='button' class='close' data-dismiss='modal'>
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class='modal-body'>
+              <form>
+                <div class='form-group'>
+                  <label for='findItem'>Search</label>
+                  <input type='search' class='form-control' placeholder='Which item are you looking for?' />
+                </div>
+                <div class='form-group'>
+                  <label for='donatedItem'>Item</label>
+                  <div class='row'>
+                    <div class='col-md-4'>
+                      <img src='' alt='Item 1' class='img-thumbnail'>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class='modal-footer'>
+              <button type='button' class='btn btn-secondary' data-dismiss='modal'>Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- jQuery library -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
   </body>
 </html>
