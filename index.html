@@ -8,6 +8,8 @@
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
           integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
     <link rel='stylesheet' href='src\style.css' >
+    <!-- link for the google font that I am using -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class='container-fluid'>
@@ -22,88 +24,106 @@
       <section class='row'>
         <img id='hero-image' class='img-fluid' alt='main-image' src='src\hero.png'/>
       </section>
-      <section class='row'>
-        <h3 class='text-uppercase'>About Us</h3>
-        <p class='text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </section>
-
+    </div>  
+    <section class='container-fluid about-background'>
+      <h2 class='text-uppercase text-center'>About Us</h2>
+      <div class="row google-font">
+        <p>Welcome to Donate’n’Find, a non-profit organization located in Queensland Australia, providing service for 
+          people donating and/or seeking donated items. Offering a possession no longer needed/or used to gratify someone else’s 
+          need is a GREAT feeling.  Sports equipment or clothing your children outgrew, kitchen appliances you don’t use anymore or 
+          collectibles you want to pass along. If you think about it, there are likely many things in your possession no use 
+          to you, but that would totally make someone else’s day! 
+        </p>
+        <br>
+        <p>There are many websites to sell items, but the preparation of setting up an account, calculating fair prices, as well as 
+          shipping logistics is overwhelming.  All this effort rarely pays off, even more so because the items are used. That is why 
+          donating makes more sense. People are always looking for something for nothing! (or very little). This is the true essence 
+          of generosity! 
+        </p>
+        <br>
+        <p>That’s why we created Donate’n’Find; to pay forward the spirit of giving and receiving.  Our landing page will provide 
+          a no-hassle process for donating and finding items, to make the process uncomplicated for the consumer. The goal is to provide 
+          an intermediary service for those who want to donate or seek gently used manageable items for feasible exchange. We will offer 
+          consumers an opportunity to connect with others to gratify their generosity, pass along no longer needed items and offer a 
+          practical solution exchange platform. 
+        </p>
+      </div>
+    </section>
+      
       <!--Donate Modal -->
-      <div class='modal fade' id='donateModal'>
-        <div class='modal-dialog'>
-          <div class='modal-content'>
-            <div class='modal-header'>
-              <h5 class='modal-title'>Donate Now</h5>
-              <button type='button' class='close' data-dismiss='modal'>
-                <span>&times;</span>
-              </button>
-            </div>
-            <div class='modal-body'>
-              <form>
-                <div class='form-group'>
-                  <label for='donorName'>Name</label>
-                  <input type='text' class='form-control' placeholder='Eg. John Smith' />
-                </div>
-                <div class='form-group'>
-                  <label for='donorEmail'>Email</label>
-                  <input type='email' class='form-control' placeholder='xyz@example.com' />
-                </div>
-                <div class='form-group'>
-                  <label for='donorNumber'>Phone No.</label>
-                  <input type='tel' class='form-control' placeholder='1234567890' />
-                </div>
-                <div class='form-group'>
-                  <label for='donoteItems'>Items to donate</label>
-                  <input type='text' class='form-control' placeholder='What you wish to give? Eg.Single Bed' />
-                </div>
-                <div class='form-group'>
-                  <label for='itemDescriptions'>Description</label>
-                  <textarea class='form-control' placeholder='Information about the item-size, color, etc'></textarea>
-                </div>
-              </form>
-            </div>
-            <div class='modal-footer'>
-              <button type='button' class='btn btn-danger'>Donate</button>
-            </div>
+    <div class='modal fade' id='donateModal'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title'>Donate Now</h5>
+            <button type='button' class='close' data-dismiss='modal'>
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class='modal-body'>
+            <form>
+              <div class='form-group'>
+                <label for='donorName'>Name</label>
+                <input type='text' class='form-control' placeholder='Eg. John Smith' />
+              </div>
+              <div class='form-group'>
+                <label for='donorEmail'>Email</label>
+                <input type='email' class='form-control' placeholder='xyz@example.com' />
+              </div>
+              <div class='form-group'>
+                <label for='donorNumber'>Phone No.</label>
+                <input type='tel' class='form-control' placeholder='1234567890' />
+              </div>
+              <div class='form-group'>
+                <label for='donoteItems'>Items to donate</label>
+                <input type='text' class='form-control' placeholder='What you wish to give? Eg.Single Bed' />
+              </div>
+              <div class='form-group'>
+                <label for='itemDescriptions'>Description</label>
+                <textarea class='form-control' placeholder='Information about the item-size, color, etc'></textarea>
+              </div>
+            </form>
+          </div>
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-danger'>Donate</button>
           </div>
         </div>
       </div>
+    </div>
 
       <!--Find Modal -->
-      <div class='modal fade' id='findModal'>
-        <div class='modal-dialog'>
-          <div class='modal-content'>
-            <div class='modal-header'>
-              <h5 class='modal-title'>Find Donated Items</h5>
-              <button type='button' class='close' data-dismiss='modal'>
-                <span>&times;</span>
-              </button>
-            </div>
-            <div class='modal-body'>
-              <form>
-                <div class='form-group'>
-                  <label for='findItem'>Search</label>
-                  <input type='search' class='form-control' placeholder='Which item are you looking for?' />
-                </div>
-                <div class='form-group'>
-                  <label for='donatedItem'>Item</label>
-                  <div class='row'>
-                    <div class='col-md-4'>
-                      <img src='' alt='Item 1' class='img-thumbnail'>
-                    </div>
+    <div class='modal fade' id='findModal'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title'>Find Donated Items</h5>
+            <button type='button' class='close' data-dismiss='modal'>
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class='modal-body'>
+            <form>
+              <div class='form-group'>
+                <label for='findItem'>Search</label>
+                <input type='search' class='form-control' placeholder='Which item are you looking for?' />
+              </div>
+              <div class='form-group'>
+                <label for='donatedItem'>Item</label>
+                <div class='row'>
+                  <div class='col-md-4'>
+                    <img src='' alt='Item 1' class='img-thumbnail'>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class='modal-footer'>
-              <button type='button' class='btn btn-secondary' data-dismiss='modal'>Done</button>
-            </div>
+              </div>
+            </form>
+          </div>
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-secondary' data-dismiss='modal'>Done</button>
           </div>
         </div>
       </div>
-
+    </div>
+    
     <!-- jQuery library -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
 
