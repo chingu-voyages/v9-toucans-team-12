@@ -1,3 +1,15 @@
+/* *google-font used to style the the text for the about us section */
+.google-font{
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3rem;
+}
+
+/* *about-color class is used to provide a background color for the about us section */
+.about-background{
+background:#fbe8a6; 
+
+}
+
 .container-fluid {
   padding: 0px 20px;
 }
