@@ -5,6 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>DonateToday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
           integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
     <link rel='stylesheet' href='src\style.css' >
@@ -31,43 +32,69 @@
       </section>
 
       <!--Donate Modal -->
-      <div class='modal fade' id='donateModal'>
-        <div class='modal-dialog'>
-          <div class='modal-content'>
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true" id='donateModal'>
+        <div class="modal-dialog modal-lg" id="modal-dialog-form"
+          style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
+          <div class='modal-content' id="model-content-form">
             <div class='modal-header'>
-              <h5 class='modal-title'>Donate Now</h5>
+              <h1 class='modal-title'>Donation Form</h1>
               <button type='button' class='close' data-dismiss='modal'>
                 <span>&times;</span>
               </button>
             </div>
-            <div class='modal-body'>
-              <form>
-                <div class='form-group'>
-                  <label for='donorName'>Name</label>
-                  <input type='text' class='form-control' placeholder='Eg. John Smith' />
-                </div>
-                <div class='form-group'>
-                  <label for='donorEmail'>Email</label>
-                  <input type='email' class='form-control' placeholder='xyz@example.com' />
-                </div>
-                <div class='form-group'>
-                  <label for='donorNumber'>Phone No.</label>
-                  <input type='tel' class='form-control' placeholder='1234567890' />
-                </div>
-                <div class='form-group'>
-                  <label for='donoteItems'>Items to donate</label>
-                  <input type='text' class='form-control' placeholder='What you wish to give? Eg.Single Bed' />
-                </div>
-                <div class='form-group'>
-                  <label for='itemDescriptions'>Description</label>
-                  <textarea class='form-control' placeholder='Information about the item-size, color, etc'></textarea>
-                </div>
-              </form>
-            </div>
-            <div class='modal-footer'>
-              <button type='button' class='btn btn-danger'>Donate</button>
-            </div>
+      
+            <form>
+              <div class='modal-body' id="modal-body-form">
+      
+                <section>
+                  <h2>Donor Information</h2>
+                  <div class='form-group'>
+                    <label for='donorName'>Name (required)</label>
+                    <input type='text' required class='form-control' placeholder='Eg. John Smith' />
+                  </div>
+                  <div class='form-group'>
+                    <label for='donorEmail'>Email (required)</label>
+                    <input type='email' required class='form-control' placeholder='xyz@example.com' />
+                  </div>
+                  <div class='form-group'>
+                    <label for='donorNumber'>Contact Number</label>
+                    <input type='tel' class='form-control' placeholder='Landline or Mobile number' />
+                  </div>
+                  <div class='form-group'>
+                    <label for='donorAddress'>Address</label>
+                    <input type='tel' class='form-control' placeholder='Street No, Street name, Suburb' />
+                  </div>
+                </section>
+      
+                <section>
+                  <h2>Donation Description</h2>
+                  <div class='form-group'>
+                    <label for='itemDonation'>Item Name</label>
+                    <input type='text' required class='form-control'
+                      placeholder='What you would like to donate? Eg. Single Bed' />
+                  </div>
+                  <div class='form-group'>
+                    <label for='itemDescription'>Item Description</label>
+                    <textarea class='form-control' placeholder='Information about the item-size, color, etc'></textarea>
+                  </div>
+                  <label class="btn btn-success">
+                    <i class="fa fa-camera" aria-hidden="true">&nbsp;</i>
+                    Upload a photo of your item (optional) <input type="file" hidden>
+                  </label>
+                </section>
+      
+              </div>
+      
+              <div class='modal-footer flex-wrap'>
+                <label>
+                  <input type="checkbox" required name="terms">
+                  I accept the <a href=#>Terms & Conditions</a>
+                </label>
+                <button type='submit' class='btn btn-primary'>SUBMIT</button>
+              </div>
           </div>
+          </form>
         </div>
       </div>
 

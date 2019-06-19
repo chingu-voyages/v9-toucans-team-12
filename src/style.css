@@ -14,8 +14,19 @@
   height: 300px;
 }
 
+
 .form-control {
   border: 0px;
   border-bottom: 1px solid #495057;
   box-shadow: none;
+}
+
+
+/*Styling to make donation form scrollable*/ 
+#modal-dialog-form{
+  overflow-y: initial !important
+}
+#modal-body-form{
+height: 300px; 
+overflow-y: auto;
 }
