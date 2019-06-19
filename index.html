@@ -88,10 +88,10 @@
       
               <div class='modal-footer flex-wrap'>
                 <label>
-                  <input type="checkbox" required name="terms">
+                  <input type="checkbox" required name="terms" id="agree-checkbox">
                   I accept the <a href=#>Terms & Conditions</a>
                 </label>
-                <button type='submit' class='btn btn-primary'>SUBMIT</button>
+                <button id="submit-button" type='submit' class='btn btn-primary' disabled>SUBMIT</button>
               </div>
           </div>
           </form>
@@ -136,5 +136,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+    
+    <!--script to re-enable Donate submit button after checkbox is ticked-->
+    <script  src="src\submitButton.js"></script>
+
   </body>
 </html>
