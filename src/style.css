@@ -24,9 +24,13 @@
 
 /*Styling to make donation form scrollable*/ 
 #modal-dialog-form{
-  overflow-y: initial !important
+  overflow-y: initial !important;
 }
+
 #modal-body-form{
-height: 300px; 
+height: 400px;
 overflow-y: auto;
 }
+
+
+
