@@ -24,56 +24,56 @@
         </div>
       </header>
       <section class='row'>
-        <img id='hero-image' class='img-fluid' alt='main-image' src='src\hero.png'/>
+        <img id='hero-image' class='img-fluid' alt='main-image' src='src\images\hero.png'/>
       </section>
 
-    </div> <!--I moved this div up here to make sure that the background color for the how it works section would fill the whole section-->
-     
+    <!--I moved this div up here to make sure that the background color for the how it works section would fill the whole section-->
+
       <!--Section for about us  -->
-    <section class='container-fluid'>
+    <section>
       <h1 class='text-capitalize text-left'>About Us</h1>
       <br>
       <div class="container about-background">
-        <p>Welcome to Donate’n’Find, a non-profit organization located in Queensland Australia, providing service for 
-          people donating and/or seeking donated items. Offering a possession no longer needed/or used to gratify someone else’s 
-          need is a GREAT feeling.  Sports equipment or clothing your children outgrew, kitchen appliances you don’t use anymore or 
-          collectibles you want to pass along. If you think about it, there are likely many things in your possession no use 
-          to you, but that would totally make someone else’s day! 
+        <p>Welcome to Donate’n’Find, a non-profit organization located in Queensland Australia, providing service for
+          people donating and/or seeking donated items. Offering a possession no longer needed/or used to gratify someone else’s
+          need is a GREAT feeling.  Sports equipment or clothing your children outgrew, kitchen appliances you don’t use anymore or
+          collectibles you want to pass along. If you think about it, there are likely many things in your possession no use
+          to you, but that would totally make someone else’s day!
         </p>
         <br>
-        <p>There are many websites to sell items, but the preparation of setting up an account, calculating fair prices, as well as 
-          shipping logistics is overwhelming.  All this effort rarely pays off, even more so because the items are used. That is why 
-          donating makes more sense. People are always looking for something for nothing! (or very little). This is the true essence 
-          of generosity! 
+        <p>There are many websites to sell items, but the preparation of setting up an account, calculating fair prices, as well as
+          shipping logistics is overwhelming.  All this effort rarely pays off, even more so because the items are used. That is why
+          donating makes more sense. People are always looking for something for nothing! (or very little). This is the true essence
+          of generosity!
         </p>
         <br>
-        <p>That’s why we created Donate’n’Find; to pay forward the spirit of giving and receiving.  Our landing page will provide 
-          a no-hassle process for donating and finding items, to make the process uncomplicated for the consumer. The goal is to provide 
-          an intermediary service for those who want to donate or seek gently used manageable items for feasible exchange. We will offer 
-          consumers an opportunity to connect with others to gratify their generosity, pass along no longer needed items and offer a 
-          practical solution exchange platform. 
+        <p>That’s why we created Donate’n’Find; to pay forward the spirit of giving and receiving.  Our landing page will provide
+          a no-hassle process for donating and finding items, to make the process uncomplicated for the consumer. The goal is to provide
+          an intermediary service for those who want to donate or seek gently used manageable items for feasible exchange. We will offer
+          consumers an opportunity to connect with others to gratify their generosity, pass along no longer needed items and offer a
+          practical solution exchange platform.
         </p>
       </div>
     </section>
     <br>
       <!-- How it works section -->
-    <section class="container-fluid works-background mt-5"> <!-- The works-background class is used to style this section -->
+    <section class="works-background mt-5"> <!-- The works-background class is used to style this section -->
         <h1 class="display-4 pt-2 text-capitalize">How it works</h1>
-        <p class="pt-2">Donate’n’Find isn’t a fancy website with several moving parts. We will keep it simple and let our design and ideas speak. 
-          The consumer will be given two options, a box to click for donations and one for locating items.  
+        <p class="pt-2">Donate’n’Find isn’t a fancy website with several moving parts. We will keep it simple and let our design and ideas speak.
+          The consumer will be given two options, a box to click for donations and one for locating items.
         </p>
         <br>
         <div class="container">
           <!-- font awesome is used to create the checkmark -->
-          <p><i class="far fa-check-circle fa-2x"></i> &nbsp; When the donate box is clicked, a form will pop up to be filled out requesting basic information about the user, as well as 
-            the item donated, to facilitate proper display. When finished, a button will be clicked, and the information is sent and stored.  
+          <p><i class="far fa-check-circle fa-2x"></i> &nbsp; When the donate box is clicked, a form will pop up to be filled out requesting basic information about the user, as well as
+            the item donated, to facilitate proper display. When finished, a button will be clicked, and the information is sent and stored.
           </p>
           <br>
           <!-- font awesome is used to create the checkmark -->
-          <p class="pb-2"><i class="far fa-check-circle fa-2x"></i> &nbsp; When the find box is clicked, an item list will appear. This list will contain pictures, brand names, and a brief description. 
-            Additionally, an option to send an email to the person making the donation. This process will access the user’s default email 
-            service to send the message. This opens a line of communication for the exchange of the item. Once this link is established the 
-            consumers will be free to contact each other privately. With the process in motion, the current screen will close.    
+          <p class="pb-2"><i class="far fa-check-circle fa-2x"></i> &nbsp; When the find box is clicked, an item list will appear. This list will contain pictures, brand names, and a brief description.
+            Additionally, an option to send an email to the person making the donation. This process will access the user’s default email
+            service to send the message. This opens a line of communication for the exchange of the item. Once this link is established the
+            consumers will be free to contact each other privately. With the process in motion, the current screen will close.
           </p>
         </div>
     </section>
@@ -99,6 +99,8 @@
           </div>
         </form>
       </section>
+
+    </div>
 
       <!--Donate Modal -->
     <div class='modal fade' id='donateModal'>
@@ -154,14 +156,55 @@
           <div class='modal-body'>
             <form>
               <div class='form-group'>
-                <label for='findItem'>Search</label>
                 <input type='search' class='form-control' placeholder='Which item are you looking for?' />
               </div>
               <div class='form-group'>
                 <label for='donatedItem'>Item</label>
                 <div class='row'>
-                  <div class='col-md-4'>
-                    <img src='' alt='Item 1' class='img-thumbnail'>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image1.jpg' alt='Item 1' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image2.jpg' alt='Item 2' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image3.jpg' alt='Item 3' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image4.jpg' alt='Item 4' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image5.jpg' alt='Item 5' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image6.jpg' alt='Item 6' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image7.jpg' alt='Item 7' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image8.jpg' alt='Item 8' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image9.jpg' alt='Item 9' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image10.jpg' alt='Item 10' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image11.jpg' alt='Item 11' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image12.jpg' alt='Item 12' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image13.jpg' alt='Item 13' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image14.jpg' alt='Item 14' class='img-fluid'/>
+                  </div>
+                  <div class='col-md-4 mb-3'>
+                    <img src='src\images\donated-items\donated-image15.jpg' alt='Item 15' class='img-fluid'/>
                   </div>
                 </div>
               </div>
@@ -173,12 +216,12 @@
         </div>
       </div>
     </div>
-    
+
     <!-- jQuery library -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
 
     <!-- Latest compiled JavaScript -->
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
-    
+
   </body>
 </html>
