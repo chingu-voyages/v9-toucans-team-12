@@ -3,20 +3,11 @@
 .about-background{
   font-family: 'EB Garamond', serif;
   font-size: 1.3rem;
-  background-image: linear-gradient(to right bottom, #cac999, #d1ce9e, #998f45, #a49648, #857b51);
-  box-shadow: 5px 5px 8px 10px #584c40da;
 }
 
-/* *-- used to design the h1 element for the about us section --*/
-.text-design{
-text-shadow: 2px 2px #eecb3f;
-color:rgb(41, 20, 9);
-}
 
 /* *-- used to design the how it works section */
 .works-background{
-  background-image: linear-gradient(to right bottom, rgb(237, 199, 183, 0.1) -26.48%, rgb(255, 185, 119, 0.7)  73.52%);
-  height: 100%; 
   font-family: 'EB Garamond', serif;
   font-size: 1.3rem;
 }
