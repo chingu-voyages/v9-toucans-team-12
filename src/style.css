@@ -1,3 +1,17 @@
+
+/* *-- used to design the about me section area --*/
+.about-background{
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3rem;
+}
+
+
+/* *-- used to design the how it works section */
+.works-background{
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3rem;
+}
+
 .container-fluid {
   padding: 0px 20px;
 }
