@@ -1,3 +1,17 @@
+
+/* *-- used to design the about me section area --*/
+.about-background{
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3rem;
+}
+
+
+/* *-- used to design the how it works section */
+.works-background{
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3rem;
+}
+
 .container-fluid {
   padding: 0px 20px;
 }
@@ -22,6 +36,7 @@
 }
 
 
+
 /*CSS to make donation form scrollable*/ 
 #modal-body-form{
   max-height: calc(100vh - 200px);
@@ -35,4 +50,26 @@
 
 
 
+/************* Styles for contct form ****************************/
+
+#contact-form {
+  padding: 0px;
+}
+
+#contact-form div * {
+  border-bottom: 2px solid #adadad;
+  margin: 35px auto;
+  padding: 0px;
+}
+
+#contact-form textarea {
+  min-height: 115px;
+}
+
+#contact-button {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  min-width: 244px;
+}
 
