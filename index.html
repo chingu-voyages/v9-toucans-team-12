@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
           integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
     <link rel='stylesheet' href='src\style.css' >
+
     <!-- link for the google font that I am using -->
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
     <!-- font awesome link -->
@@ -144,9 +145,9 @@
     </div>
 
       <!--Find Modal -->
-    <div class='modal fade' id='findModal'>
-      <div class='modal-dialog'>
-        <div class='modal-content'>
+    <div class='modal fade pr-0' id='findModal'>
+      <div class='modal-dialog modal-dialog-centered'>
+        <div class='modal-content h-100'>
           <div class='modal-header'>
             <h5 class='modal-title'>Find Donated Items</h5>
             <button type='button' class='close' data-dismiss='modal'>
@@ -154,64 +155,63 @@
             </button>
           </div>
           <div class='modal-body'>
-            <form>
-              <div class='form-group'>
-                <input type='search' class='form-control' placeholder='Which item are you looking for?' />
-              </div>
-              <div class='form-group'>
-                <label for='donatedItem'>Item</label>
-                <div class='row'>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image1.jpg' alt='Item 1' class='img-fluid'/>
+              <ul class='donated-item-menu text-center px-0'>
+                <li class='active list-group-item d-inline-block mb-2 mr-2' data-filter='*'>All</li>
+                <li class='list-group-item d-inline-block mb-2 mr-2' data-filter='.accessories'>Accesssories</li>
+                <li class='list-group-item d-inline-block mb-2 mr-2' data-filter='.clothing'>Clothing</li>
+                <li class='list-group-item d-inline-block mb-2 mr-2' data-filter='.sports'>Sports</li>
+                <li class='list-group-item d-inline-block mb-2 mr-2' data-filter='.kitchen'>Kitchen</li>
+              </ul>
+              <div class='donated-item-container'>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image1.jpg\600\600' alt='Item 1' class='img-responsive'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image2.jpg' alt='Item 2' class='img-fluid'/>
+                  <div class='donated-item shoes'>
+                    <img src='src\images\donated-items\donated-image2.jpg\600\600' alt='Item 2'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image3.jpg' alt='Item 3' class='img-fluid'/>
+                 <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image3.jpg\600\600' alt='Item 3'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image4.jpg' alt='Item 4' class='img-fluid'/>
+                <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image4.jpg\600\600' alt='Item 4'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image5.jpg' alt='Item 5' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image5.jpg\600\600' alt='Item 5'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image6.jpg' alt='Item 6' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image6.jpg\600\600' alt='Item 6'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image7.jpg' alt='Item 7' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image7.jpg\600\600' alt='Item 7'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image8.jpg' alt='Item 8' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image8.jpg\600\600' alt='Item 8'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image9.jpg' alt='Item 9' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image9.jpg\600\600' alt='Item 9'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image10.jpg' alt='Item 10' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image10.jpg\600\600' alt='Item 10'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image11.jpg' alt='Item 11' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image11.jpg\600\600' alt='Item 11'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image12.jpg' alt='Item 12' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image12.jpg\600\600' alt='Item 12'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image13.jpg' alt='Item 13' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image13.jpg\600\600' alt='Item 13'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image14.jpg' alt='Item 14' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image14.jpg\600\600' alt='Item 14'/>
                   </div>
-                  <div class='col-md-4 mb-3'>
-                    <img src='src\images\donated-items\donated-image15.jpg' alt='Item 15' class='img-fluid'/>
+                  <div class='donated-item'>
+                    <img src='src\images\donated-items\donated-image15.jpg\600\600' alt='Item 15'/>
                   </div>
                 </div>
-              </div>
-            </form>
-          </div>
+            </div>
           <div class='modal-footer'>
-            <button type='button' class='btn btn-secondary' data-dismiss='modal'>Done</button>
+            <button type='button' class='btn btn-danger' data-dismiss='modal'>Done</button>
           </div>
         </div>
       </div>
@@ -219,9 +219,9 @@
 
     <!-- jQuery library -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-
     <!-- Latest compiled JavaScript -->
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src='src\main.js'></script>
   </body>
 </html>

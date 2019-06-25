@@ -56,3 +56,8 @@
   height: 50px;
   min-width: 244px;
 }
+
+/******************* Styles for Find form **************************/
+.modal-dialog {
+  max-width: 100%;
+}
