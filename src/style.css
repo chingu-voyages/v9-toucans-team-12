@@ -22,7 +22,7 @@
 }
 
 
-/*Styling to make donation form scrollable*/ 
+/*CSS to make donation form scrollable*/ 
 #modal-dialog-form{
   overflow-y: initial !important;
 }
@@ -31,6 +31,12 @@
 height: 400px;
 overflow-y: auto;
 }
+
+/*CSS to increase height of item-description's text area in form*/
+#donation-information textarea {
+  min-height: 115px;
+}
+
 
 
 
