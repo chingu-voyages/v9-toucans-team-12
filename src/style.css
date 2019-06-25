@@ -1,16 +1,10 @@
 
 /* *-- used to give a google font and font size --*/
-.about-background{
+.fonts{
   font-family: 'EB Garamond', serif;
   font-size: 1.3rem;
 }
 
-
-/* *-- used to give a google font and font size  */
-.works-background{
-  font-family: 'EB Garamond', serif;
-  font-size: 1.3rem;
-}
 
 .container-fluid {
   padding: 0px 20px;
