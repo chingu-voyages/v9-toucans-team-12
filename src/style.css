@@ -28,11 +28,27 @@
   height: 300px;
 }
 
+
 .form-control {
   border: 0px;
   border-bottom: 1px solid #495057;
   box-shadow: none;
 }
+
+
+
+/*CSS to make donation form scrollable*/ 
+#modal-body-form{
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+/*CSS to increase height of item-description's text area in form*/
+#donation-information textarea {
+  min-height: 115px;
+}
+
+
 
 /************* Styles for contct form ****************************/
 
@@ -56,3 +72,4 @@
   height: 50px;
   min-width: 244px;
 }
+
