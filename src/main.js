@@ -1,14 +1,16 @@
-$('.donated-item-container').isotope({
-  itemSelector: '.donated-item',
-  layoutMode: 'fitRows'
-});
 $('.donated-item-menu li').click(function(){
   $('.donated-item-menu li').removeClass('active');
   $(this).addClass('active');
+  var currentTag = $(this).attr('data-filter');
 
-  var selected = $(this).attr('data-filter');
-  $('donated-item-container').isotope({
-    filter: selected
+  $('.donated-item-container div').each(function(){
+    if ($(this).hasClass(currentTag)) {
+      $(this).show();
+      $(this).fadeIn();
+    }
+    else {
+      $(this).hide();
+    }
   });
-  return false;
+
 });
