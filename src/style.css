@@ -62,15 +62,16 @@
   max-width: 100%;
 }
 
-.donated-item-menu li {
+.donated-item-tag li {
   background-color: #fe4a49;
   border-color: #fe4a49;
   border-radius: 5px;
   color: #fff;
+  cursor: pointer;
   padding: .25rem 1rem;
 }
 
-.donated-item-menu .active {
+.donated-item-tag .active {
   background-color: #dc3545;
   border-color: #fe4a49;
 }
