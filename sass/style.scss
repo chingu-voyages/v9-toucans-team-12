@@ -4,39 +4,39 @@
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
   }
-  
+
   .container-fluid {
     padding: 0px 20px;
   }
-  
+
   .row {
     margin: 30px auto;
   }
-  
+
   .btn-danger {
     margin: 0 3px;
   }
-  
+
   #main-image {
     height: 300px;
   }
-  
+
   .form-control {
     border: 0px;
     border-bottom: 1px solid #495057;
     box-shadow: none;
   }
-  
-  
-  
-/*CSS to make donation form scrollable*/ 
+
+
+
+/*CSS to make donation form scrollable*/
 /*CSS to increase height of item-description's text area in form*/
 #donate-form{
     #modal-body-form{
       max-height: calc(100vh - 200px);
       overflow-y: auto;
     }
-    #donation-information{ 
+    #donation-information{
         textarea {
           min-height: 115px;
         }
@@ -44,7 +44,7 @@
 }
 
 
-/***Contact Form***/ 
+/***Contact Form***/
 #contact-form {
     padding: 0px;
 
@@ -65,5 +65,24 @@
     min-width: 244px;
     }
 }
-  
-  
+
+/******************* Styles for Find form **************************/
+.modal-dialog {
+  max-width: 100%;
+}
+
+.donated-item-tag {
+  li {
+    background-color: #fe4a49;
+    border-color: #fe4a49;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: .25rem 1rem;
+  }
+
+  .active {
+    background-color: #dc3545;
+    border-color: #fe4a49;
+  }
+}
