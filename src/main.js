@@ -1,6 +1,6 @@
 $('.donated-item-container').isotope({
   itemSelector: '.donated-item',
-  percentPosition: true
+  layoutMode: 'fitRows'
 });
 $('.donated-item-menu li').click(function(){
   $('.donated-item-menu li').removeClass('active');
