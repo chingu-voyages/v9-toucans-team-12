@@ -67,8 +67,14 @@
 }
 
 /******************* Styles for Find form **************************/
-.modal-dialog {
-  max-width: 100%;
+#findModal {
+  .modal-dialog {
+    max-width: 100%;
+  }
+  .modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
 }
 
 .donated-item-tag {
