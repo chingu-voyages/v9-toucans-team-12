@@ -67,11 +67,12 @@
     }
 }
 
+.modal-dialog {
+  max-width: 90%;
+}
+
 /******************* Styles for Find form **************************/
 #findModal {
-  .modal-dialog {
-    max-width: 90%;
-  }
   .modal-body {
     max-height: calc(100vh - 200px);
     overflow-y: auto;
