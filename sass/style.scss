@@ -1,8 +1,6 @@
 
-/* *-- used to give a google font and font size --*/
-.fonts{
-    font-family: 'EB Garamond', serif;
-    font-size: 1.3rem;
+ *{
+   font-family: 'Cagliostro', sans-serif;
   }
 
   .container-fluid {
@@ -18,10 +16,6 @@
     margin: 0 3px;
   }
 
-  #main-image {
-    height: 300px;
-  }
-
   .form-control {
     border: 0px;
     border-bottom: 1px solid #495057;
@@ -30,6 +24,53 @@
 
 
 
+/***----Page Header---***/
+/*Styles for page-header containing logo & main buttons*/
+#page-header{
+  #logo-wrapper{
+    #logo-pic{ 
+     #logo{
+       margin-bottom: 20px; 
+       margin-right: 5px; 
+     } 
+   }
+   #logo-text{
+     text-decoration: none; 
+     font-size: 40px; 
+     color: #151f28; 
+     margin-top: 50px;
+   }
+  }
+}
+
+/**Media query for page-header***/
+@media only screen and (max-width: 450px){
+  #page-header{
+   #logo-wrapper{
+     display: flex; 
+     flex-direction: column; 
+     align-items: center; 
+     margin: auto; 
+     #logo-text{
+      margin-top: -25px; 
+    }
+   }
+   #main-buttons{
+     margin: auto; 
+     margin-top: 20px; 
+   }
+  }
+}
+
+/****---Main-Image section---****/
+#main-image-section{ 
+  #main-image {
+    height: 300px;
+  }
+}
+
+
+/***Donate Form***/
 /*CSS to make donation form scrollable*/
 /*CSS to increase height of item-description's text area in form*/
 #donate-form{
@@ -41,13 +82,13 @@
         textarea {
           min-height: 115px;
         }
-      }
+    }
 }
+
 
 
 /***Contact Form***/
 #contact-form {
-  
     div * {
     border-bottom: 2px solid #adadad;
     margin: 35px auto;
