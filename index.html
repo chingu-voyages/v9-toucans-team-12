@@ -17,24 +17,28 @@
 
 <body>
     <div class="container-fluid">
-        <header class="d-flex justify-content-between row mb-5" id="page-header">
-            <div id="logo-wrapper">
-                <a id="logo-pic" href="#"><img id="logo" src='src\logo.png' alt='logo'/></a>
-                <a id="logo-text" href="#">Donate n Find</a>
-            </div>
-            <div class="d-flex" id="main-buttons">
-                <!--
-                <a class="nav-link text-uppercase" href="#about-us">About Us</a>
-                <a class="nav-link text-uppercase" href="#about-us">How it works</a>
-                <a class="nav-link text-uppercase" href="#about-us">Contact Us</a>
-                -->
-                <button id="donate-button" type="button" class="btn btn-danger btn-lg text-uppercase" data-toggle="modal" data-target="#donateModal">donate</button>
-                <button id="find-button" type="button" class="btn btn-danger btn-lg text-uppercase" data-toggle="modal" data-target="#findModal">find&NonBreakingSpace;<i class="fa fa-search"></i></button>
-            </div>
-        </header>
-        <section class="container-fluid mb-5">
-            <img class="img-fluid rounded mx-auto d-block" alt="main-image" src="src\mainpicture.jpg" />
-        </section>
+        <div id="header-image-wrapper">
+            <header class="d-flex justify-content-between row mb-5" id="page-header">
+                <div id="logo-wrapper">
+                    <a id="logo-pic" href="#"><img id="logo" src='src\logo.png' alt='logo' /></a>
+                    <a id="logo-text" href="#">Donate n Find</a>
+                </div>
+                <div class="d-flex" id="main-buttons">
+                       <!--
+                        <a class="nav-link text-uppercase" href="#about-us">About Us</a>
+                        <a class="nav-link text-uppercase" href="#about-us">How it works</a>
+                        <a class="nav-link text-uppercase" href="#about-us">Contact Us</a>
+                        -->
+                    <button id="donate-button" type="button" class="btn btn-danger btn-lg text-uppercase" data-toggle="modal"
+                        data-target="#donateModal">donate</button>
+                    <button id="find-button" type="button" class="btn btn-danger btn-lg text-uppercase" data-toggle="modal"
+                        data-target="#findModal">find&nbsp;<i class="fa fa-search"></i></button>
+                </div>
+            </header>
+            <section class="container-fluid mb-5">
+                <img class="img-fluid rounded mx-auto d-block" alt="main-image" src="src\mainpicture.jpg" />
+            </section>
+        </div>
 
         <!--Section for about us  -->
         <section class="mt-5">
@@ -58,7 +62,6 @@
             <!-- font awesome is used to create the checkmark -->
             <p class="py-2"><i class="far fa-check-circle fa-lg"></i> &nbsp; When our Find button is clicked, a list of items is made visible. Our list contain pictures and a brief description of available items. Additionally, giving you the option to send an email to the person making the donation. As the person seeking a donation, you are free to contact the donor privately. With the process in motion, the current screen will close.
             </p>
-          </div>
       </section>
 
       <!-- Contact Us section -->

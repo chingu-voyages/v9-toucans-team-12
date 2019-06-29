@@ -61,7 +61,7 @@
   
 }
 
-/**Media query for page-header***/
+/**Media queries for Page-header***/
 @media only screen and (max-width: 450px){
   #page-header{
     /**logo**/
@@ -89,6 +89,27 @@
       margin-top: 10px;  
      }
    }
+  }
+}
+@media (min-width: 450px) and (max-width: 985px){
+  #header-image-wrapper{
+    #page-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #logo-wrapper{
+       margin-left: -20px;  
+       #logo{
+        margin-left: -10px; 
+       }
+      }
+      #donate-button{
+        height: 75px;
+       }
+      #find-button{
+        height: 75px;  
+      }
+    }
   }
 }
 
