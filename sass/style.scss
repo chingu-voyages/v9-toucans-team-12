@@ -34,6 +34,7 @@
 /***----Page Header---***/
 /*Styles for page-header containing logo & main buttons*/
 #page-header{
+  /**logo**/
   #logo-wrapper{
     #logo-pic{
      #logo{
@@ -48,11 +49,22 @@
      margin-top: 50px;
    }
   }
+  /**main buttons**/ 
+  #donate-button{
+   margin-right: 50px;  
+   width: 200px;
+  }
+  #find-button{
+   margin-right: 25px;
+   width: 200px;  
+  }
+  
 }
 
 /**Media query for page-header***/
 @media only screen and (max-width: 450px){
   #page-header{
+    /**logo**/
    #logo-wrapper{
      display: flex;
      flex-direction: column;
@@ -62,9 +74,20 @@
       margin-top: -25px;
     }
    }
+   /**main buttons*/
    #main-buttons{
-     margin: auto;
-     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto; 
+    align-items: center;
+    margin-top: 20px; 
+     #donate-button{
+      margin: auto; 
+     }
+     #find-button{
+      margin: auto; 
+      margin-top: 10px;  
+     }
    }
   }
 }
