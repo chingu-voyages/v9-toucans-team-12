@@ -51,7 +51,7 @@
         <section class="mt-5">
             <!-- The works-background class is used to style this section -->
             <h1 class="text-capitalize">How it works</h1>
-            <p class="py-2">Donate n Find isn’t a fancy platform with several moving parts. We provide a practical solution and our simple design and innovative idea speak. Two distinct options are readily available to you. We make it simple for you to either make a donation, locate one or do both. 
+            <p class="py-2">Donate n Find isn’t a fancy platform with several moving parts. We provide a practical solution and our simple design and innovative idea speak. Two distinct options are readily available to you. We make it simple for you to either make a donation, locate one or do both.
             </p>
             <p class="py-2"><i class="far fa-check-circle fa-lg"></i> &nbsp; When our Donate button is clicked, a form is popped up to be filled out requesting basic information about you and an item you wish to donate. When finished, your form can be submitted and the information is sent and stored. We only require you to provide minimal contact information with a brief description about an item you wish to donate.
             </p>
@@ -61,26 +61,32 @@
           </div>
       </section>
 
+
       <!-- Contact Us section -->
-      <section class='row mx-5'>
-        <h1 class='text-capitalize'>Contact us</h1>
-        <form id='contact-form' class='col-sm-12 p-0'>
-          <div class='col-xs-12'>
-            <input type='text' class='form-control' placeholder='NAME' />
+      <section class="pl-2 my-5">
+        <h1 class="text-capitalize">Contact us</h1>
+        <div class="d-flex mt-2">
+        <form id="contact-form" class="col-6 p-0 d-flex flex-column">
+          <div class="my-2">
+            <input type="text" class="form-control" placeholder="Name" />
           </div>
-          <div class='col-xs-12'>
-            <input type='email' class='form-control' placeholder='EMAIL' />
+          <div class="my-2">
+            <input type="email" class="form-control" placeholder="Email" required/>
           </div>
-          <div class='col-xs-12'>
-            <input type='text' class='form-control' placeholder='SUBJECT' />
+          <div class="my-2">
+            <input type="text" class="form-control" placeholder="Subject" required/>
           </div>
-          <div class='col-xs-12'>
-            <textarea type='text' class='form-control' rows='3' placeholder='MESSAGE'></textarea>
+          <div class="my-2">
+            <textarea type="text" class="form-control" rows="3" placeholder="Message"></textarea>
           </div>
-          <div class='col-xs-4 text-center'> <!-- To make the button center horizontally -->
-            <button id='contact-button' type='button' class='btn-danger text-uppercase'>Submit</button>
+          <div class="my-2">
+            <button id="contact-button" type="button" class="float-left text-center btn-danger text-uppercase">Submit</button>
           </div>
         </form>
+        <div class="col-6 d-flex">
+          <img src="src\images\letter.svg" class="w-50 m-auto"/>
+        </div>
+      </div>
       </section>
     </div>
 

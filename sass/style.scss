@@ -26,6 +26,10 @@
     box-shadow: none;
   }
 
+  .modal-dialog {
+    max-width: 90%;
+  }
+
   p {
     text-align: justify;
   }
@@ -93,24 +97,13 @@
 #contact-form {
     div * {
     border-bottom: 2px solid #adadad;
-    margin: 35px auto;
-    padding: 0px;
-    }
-
-    textarea {
-    min-height: 115px;
     }
 
     #contact-button {
     border: none;
     border-radius: 5px;
     height: 50px;
-    min-width: 244px;
     }
-}
-
-.modal-dialog {
-  max-width: 90%;
 }
 
 /******************* Styles for Find form **************************/
