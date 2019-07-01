@@ -53,10 +53,12 @@
   #donate-button{
    margin-right: 50px;  
    width: 200px;
+   height: 65px;
   }
   #find-button{
    margin-right: 25px;
    width: 200px;  
+   height: 65px; 
   }
   
 }
@@ -83,10 +85,12 @@
     margin-top: 20px; 
      #donate-button{
       margin: auto; 
+      height: 55px; 
      }
      #find-button{
       margin: auto; 
       margin-top: 10px;  
+      height: 55px; 
      }
    }
   }
@@ -104,10 +108,10 @@
        }
       }
       #donate-button{
-        height: 75px;
+        height: 65px;
        }
       #find-button{
-        height: 75px;  
+        height: 65px;  
       }
     }
   }
