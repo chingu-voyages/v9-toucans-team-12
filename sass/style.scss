@@ -50,15 +50,22 @@
    }
   }
   /**main buttons**/ 
-  #donate-button{
-   margin-right: 50px;  
-   width: 200px;
-   height: 65px;
-  }
-  #find-button{
-   margin-right: 25px;
-   width: 200px;  
-   height: 65px; 
+  #main-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    #donate-button{
+     margin-right: 50px;  
+     width: 200px;
+     height: 65px;
+     margin-bottom: 15px; 
+    }
+    #find-button{
+     margin-right: 25px;
+     width: 200px;  
+     height: 65px; 
+     margin-bottom: 15px; 
+    }
   }
   
 }
