@@ -11,10 +11,16 @@
   background-color: #fe4a49;
   margin: 0 3px; }
 
+.btn-primary {
+  background-color: #4793d7; }
+
 .form-control {
   border: 0px;
   border-bottom: 1px solid #495057;
   box-shadow: none; }
+
+p {
+  text-align: justify; }
 
 /***----Page Header---***/
 /*Styles for page-header containing logo & main buttons*/
@@ -39,10 +45,6 @@
   #page-header #main-buttons {
     margin: auto;
     margin-top: 20px; } }
-/****---Main-Image section---****/
-#main-image-section #main-image {
-  height: 300px; }
-
 /***Donate Form***/
 /*CSS to make donation form scrollable*/
 /*CSS to increase height of item-description's text area in form*/
@@ -102,3 +104,8 @@
 
 .donated-item:hover .mask {
   height: 100%; }
+
+/********** Media queries ****************/
+@media only screen and (min-width: 450px) {
+  h2 {
+    font-size: 2.5rem; } }
