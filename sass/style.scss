@@ -34,15 +34,6 @@
     text-align: justify;
   }
 
-  .modal-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    .modal-logo{
-      margin-right: 10px; 
-    }
-  } 
-
 
 /***----Page Header---***/
 /*Styles for page-header containing logo & main buttons*/
@@ -143,18 +134,16 @@
 /***Donate Form***/
 /*CSS to make donation form scrollable*/
 /*CSS to increase height of item-description's text area in form*/
-#donateModal{
-  #donate-form{
-     #modal-body-form{
-       max-height: calc(100vh - 200px);
-       overflow-y: auto;
-      }
-      #donation-information{
-          textarea {
-           min-height: 115px;
-      }
+#donate-form{
+    #modal-body-form{
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
     }
- }
+    #donation-information{
+        textarea {
+          min-height: 115px;
+        }
+    }
 }
 
 
