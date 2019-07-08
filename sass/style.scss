@@ -53,25 +53,25 @@
      margin-top: 50px;
    }
   }
-  /**main buttons**/ 
+  /**main buttons**/
   #main-buttons{
     display: flex;
     flex-direction: row;
     align-items: center;
     #donate-button{
-     margin-right: 50px;  
+     margin-right: 50px;
      width: 200px;
      height: 65px;
-     margin-bottom: 15px; 
+     margin-bottom: 15px;
     }
     #find-button{
      margin-right: 25px;
-     width: 200px;  
-     height: 65px; 
-     margin-bottom: 15px; 
+     width: 200px;
+     height: 65px;
+     margin-bottom: 15px;
     }
   }
-  
+
 }
 
 /**Media queries for Page-header***/
@@ -91,17 +91,17 @@
    #main-buttons{
     display: flex;
     flex-direction: column;
-    margin: auto; 
+    margin: auto;
     align-items: center;
-    margin-top: 20px; 
+    margin-top: 20px;
      #donate-button{
-      margin: auto; 
-      height: 55px; 
+      margin: auto;
+      height: 55px;
      }
      #find-button{
-      margin: auto; 
-      margin-top: 10px;  
-      height: 55px; 
+      margin: auto;
+      margin-top: 10px;
+      height: 55px;
      }
    }
   }
@@ -113,16 +113,16 @@
       flex-direction: column;
       align-items: center;
       #logo-wrapper{
-       margin-left: -20px;  
+       margin-left: -20px;
        #logo{
-        margin-left: -10px; 
+        margin-left: -10px;
        }
       }
       #donate-button{
         height: 65px;
        }
       #find-button{
-        height: 65px;  
+        height: 65px;
       }
     }
   }
@@ -151,13 +151,15 @@
 /***Contact Form***/
 #contact-form {
     div * {
-    border-bottom: 2px solid #adadad;
+      border-bottom: 1px solid #adadad;
     }
-
+    #contact-form-img {
+      width: 30%;
+    }
     #contact-button {
-    border: none;
-    border-radius: 5px;
-    height: 50px;
+      border: none;
+      border-radius: 5px;
+      height: 50px;
     }
 }
 
