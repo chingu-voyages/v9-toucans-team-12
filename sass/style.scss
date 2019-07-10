@@ -34,6 +34,15 @@
     text-align: justify;
   }
 
+  .modal-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .modal-logo{
+      margin-right: 10px; 
+    }
+  } 
+
 
 /***----Page Header---***/
 /*Styles for page-header containing logo & main buttons*/
