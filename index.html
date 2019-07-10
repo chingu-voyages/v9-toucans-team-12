@@ -19,9 +19,10 @@
 
 <body>
     <div class="container-fluid">
+        <div id="header-image-wrapper">
         <header class="d-flex justify-content-between row" id="page-header">
             <div id="logo-wrapper">
-                <a id="logo-pic" href="#"><img id="logo" src='src\logo.png' alt='logo'/></a>
+                <a id="logo-pic" href="#"><img id="logo" src='src\logo.png' alt='logo' /></a>
                 <a id="logo-text" href="#">Donate n Find</a>
             </div>
             <div class="d-flex" id="main-buttons">
@@ -29,14 +30,17 @@
                 <a class="nav-link text-uppercase" href="#about-us">About Us</a>
                 <a class="nav-link text-uppercase" href="#about-us">How it works</a>
                 <a class="nav-link text-uppercase" href="#about-us">Contact Us</a>
-                -->
-                <button type="button" class="btn btn-danger text-uppercase" data-toggle="modal" data-target="#donateModal">donate</button>
-                <button type="button" class="btn btn-danger text-uppercase" data-toggle="modal" data-target="#findModal">find</button>
+                 -->
+                <button id="donate-button" type="button" class="btn btn-danger btn-lg text-uppercase" data-toggle="modal"
+                    data-target="#donateModal">donate</button>
+                <button id="find-button" type="button" class="btn btn-danger btn-lg text-uppercase" data-toggle="modal"
+                    data-target="#findModal">find&nbsp;<i class="fa fa-search"></i></button>
             </div>
         </header>
         <section class="container-fluid mb-5">
             <img class="img-fluid rounded mx-auto d-block" alt="main-image" src="src\picture-main.png" />
         </section>
+        </div>
 
         <!--Section for about us  -->
         <section class="mt-5">
