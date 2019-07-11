@@ -10,6 +10,11 @@ $('.donated-item-tag li').click(function(){
   if(currentTag === '*') {
     $('.donated-item').show('1000');
   }
+  else if (currentTag === 'others') {
+    $('.others').removeClass('d-none');
+    $('.donated-item').not('.'+currentTag).hide('5000');
+    $('.donated-item').filter('.'+currentTag).show('5000');
+  }
   else {
     //Display only items whose tag is active and transition effect
     $('.donated-item').not('.'+currentTag).hide('5000');
@@ -25,7 +30,7 @@ $('#contact-form').on('submit', function(e) {
   e.preventDefault(); //stop submit
 
   if ($('#contact-form').is(':valid')) {
-  //Check to make sure required fields are filled out 
+  //Check to make sure required fields are filled out
     $('#exampleModalCenter').modal('show');
   }
 });
