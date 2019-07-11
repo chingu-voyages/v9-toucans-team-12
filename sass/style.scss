@@ -26,8 +26,10 @@
     box-shadow: none;
   }
 
-  .modal-dialog {
-    max-width: 90%;
+  #donateModal, #findModal{
+    .modal-dialog{
+      max-width:90%;
+    }
   }
 
   p {

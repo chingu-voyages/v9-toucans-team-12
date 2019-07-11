@@ -17,3 +17,15 @@ $('.donated-item-tag li').click(function(){
   }
 
 });
+
+//******* Validate contact us form fields ******************//
+
+$('#contact-form').on('submit', function(e) {
+
+  e.preventDefault(); //stop submit
+
+  if ($('#contact-form').is(':valid')) {
+  //Check to make sure required fields are filled out 
+    $('#exampleModalCenter').modal('show');
+  }
+});
