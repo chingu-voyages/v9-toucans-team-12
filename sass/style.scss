@@ -26,12 +26,23 @@
     box-shadow: none;
   }
 
-  .modal-dialog {
-    max-width: 90%;
+  #donateModal, #findModal{
+    .modal-dialog{
+      max-width:90%;
+    }
   }
 
   p {
     text-align: justify;
+  }
+
+  .modal-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .modal-logo{
+      margin-right: 10px;
+    }
   }
 
 
@@ -153,14 +164,15 @@
     div * {
       border-bottom: 1px solid #adadad;
     }
-    #contact-form-img {
-      width: 30%;
-    }
     #contact-button {
       border: none;
       border-radius: 5px;
-      height: 50px;
+      height: 40px;
     }
+}
+
+#contact-form-img {
+  width: 70%;
 }
 
 /******************* Styles for Find form **************************/
@@ -210,24 +222,39 @@
   height: 100%;
 }
 
+/********** Footer *****************/
+footer {
+  background-color: #efeeee;
+  a {
+    color:inherit;
+  }
+  a:hover {
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
 /********** Media queries ****************/
 @media only screen and (min-width: 450px) {
   h2 {
     font-size: 2.5rem;
+  }
+  #contact-form-img {
+    width: 35%;
   }
 }
 
 
 /****CSS for Scroll To Top button****/
 #btn-scrollToTop{
-  position: fixed; 
-  right: 15px; 
-  bottom: 15px; 
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
   width: 50px;
-  height: 50px; 
-  border-radius: 50%; 
+  height: 50px;
+  border-radius: 50%;
 
-  transition: background-color .3s, 
+  transition: background-color .3s,
   opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;

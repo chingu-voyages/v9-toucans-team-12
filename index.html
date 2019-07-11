@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DonateToday</title>
+    <title>Donate n Find</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css\style.css">
@@ -19,40 +19,37 @@
 
 <body>
     <div class="container-fluid">
-        <header class="d-flex justify-content-between row" id="page-header">
-            <div id="logo-wrapper">
-                <a id="logo-pic" href="#"><img id="logo" src='src\logo.png' alt='logo'/></a>
-                <a id="logo-text" href="#">Donate n Find</a>
-            </div>
-            <div class="d-flex" id="main-buttons">
-                <!--
-                <a class="nav-link text-uppercase" href="#about-us">About Us</a>
-                <a class="nav-link text-uppercase" href="#about-us">How it works</a>
-                <a class="nav-link text-uppercase" href="#about-us">Contact Us</a>
-                -->
-                <button type="button" class="btn btn-danger text-uppercase" data-toggle="modal" data-target="#donateModal">donate</button>
-                <button type="button" class="btn btn-danger text-uppercase" data-toggle="modal" data-target="#findModal">find</button>
-            </div>
-        </header>
-        <section class="container-fluid mb-5">
-            <img class="img-fluid rounded mx-auto d-block" alt="main-image" src="src\picture-main.png" />
-        </section>
+        <div id="header-image-wrapper">
+            <header class="d-flex justify-content-between row" id="page-header">
+                <div id="logo-wrapper">
+                    <a id="logo-pic" href="index.html"><img id="logo" src='src\logo.png' alt='logo' /></a>
+                    <a id="logo-text" href="index.html">Donate n Find</a>
+                </div>
+                <div class="d-flex" id="main-buttons">
+                    <button id="donate-button" type="button" class="btn btn-danger btn-lg text-uppercase" data-toggle="modal" data-target="#donateModal">donate</button>
+                    <button id="find-button" type="button" class="btn btn-danger btn-lg text-uppercase" data-toggle="modal" data-target="#findModal">find&nbsp;<i class="fa fa-search"></i></button>
+                </div>
+            </header>
+            <section class="container-fluid mb-5">
+                <img class="img-fluid rounded mx-auto d-block" alt="main-image" src="src\picture-main.png" />
+            </section>
+        </div>
 
         <!--Section for about us  -->
         <section class="mt-5">
             <h2>About Us</h2>
-                <p class="py-2">Welcome to Donate n Find, our online non-profit organization providing a platform for people donating and/or seeking items available for donation. Offering a possession no longer needed/or used to gratify someone else's need is a GREAT feeling. Sports equipment or clothing your children outgrew, kitchen appliances you don’t use anymore or collectibles you want to pass along. If you think about it, there are likely many things in your possession no use to you, but that would totally make someone else's day!
-                </p>
-                <p class="py-2">There are many places online to sell items, but the preparation of setting up an account, calculating fair prices, as well as shipping logistics is overwhelming. All this effort rarely pays off, even more so because the items are used. That is why donating makes more sense. People are always looking for something for nothing! (or very little). This is the true essence of generosity!
-                </p>
-                <p class="py-2">That’s why we created Donate n Find; to pay forward the spirit of giving and receiving. Our site provides a no-hassle process for donating and finding items, to make the process uncomplicated for you. Our goal is to provide an intermediary service for those who want to donate or seek gently used manageable items for feasible exchange. We provide you with the opportunity to connect with others to gratify their generosity, pass along no longer needed items and offer a practical solution exchange platform.
-                </p>
+            <p class="py-2">Welcome to Donate n Find, our online non-profit organization providing a platform for people donating and/or seeking items available for donation. Offering a possession no longer needed/or used to gratify someone else's need is a GREAT feeling. Sports equipment or clothing your children outgrew, kitchen appliances you don’t use anymore or collectibles you want to pass along. If you think about it, there are likely many things in your possession no use to you, but that would totally make someone else's day!
+            </p>
+            <p class="py-2">There are many places online to sell items, but the preparation of setting up an account, calculating fair prices, as well as shipping logistics is overwhelming. All this effort rarely pays off, even more so because the items are used. That is why donating makes more sense. People are always looking for something for nothing! (or very little). This is the true essence of generosity!
+            </p>
+            <p class="py-2">That’s why we created Donate n Find; to pay forward the spirit of giving and receiving. Our site provides a no-hassle process for donating and finding items, to make the process uncomplicated for you. Our goal is to provide an intermediary service for those who want to donate or seek gently used manageable items for feasible exchange. We provide you with the opportunity to connect with others to gratify their generosity, pass along no longer needed items and offer a practical solution exchange platform.
+            </p>
         </section>
 
         <!-- How it works section -->
         <section class="mt-5">
             <!-- The works-background class is used to style this section -->
-            <h1 class="text-capitalize">How it works</h1>
+            <h2 class="text-capitalize">How it works</h2>
             <p class="py-2">Donate n Find isn’t a fancy platform with several moving parts. We provide a practical solution and our simple design and innovative idea speak. Two distinct options are readily available to you. We make it simple for you to either make a donation, locate one or do both.
             </p>
             <p class="py-2"><i class="far fa-check-circle fa-lg"></i> &nbsp; When our Donate button is clicked, a form is popped up to be filled out requesting basic information about you and an item you wish to donate. When finished, your form can be submitted and the information is sent and stored. We only require you to provide minimal contact information with a brief description about an item you wish to donate.
@@ -60,52 +57,61 @@
             <!-- font awesome is used to create the checkmark -->
             <p class="py-2"><i class="far fa-check-circle fa-lg"></i> &nbsp; When our Find button is clicked, a list of items is made visible. Our list contain pictures and a brief description of available items. Additionally, giving you the option to send an email to the person making the donation. As the person seeking a donation, you are free to contact the donor privately. With the process in motion, the current screen will close.
             </p>
-      </section>
+        </section>
 
+        <!-- Contact Us section -->
+        <section class="my-5">
+            <h2 class="text-capitalize">Contact us</h2>
+            <div class="d-flex mt-2">
+                <form id="contact-form" class="col-6 p-0 mt-2 d-flex flex-column">
+                    <div class="my-2">
+                        <input type="text" class="form-control" placeholder="Name" />
+                    </div>
+                    <div class="my-2">
+                        <input type="email" class="form-control" placeholder="Email" required/>
+                    </div>
+                    <div class="my-2">
+                        <input type="text" class="form-control" placeholder="Subject" required/>
+                    </div>
+                    <div class="my-2">
+                        <textarea type="text" class="form-control" rows="3" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="my-2 py-1">
+                        <button id="contact-button" type="submit" class="float-left text-center btn-danger text-uppercase" data-toggle="modal">Submit</button>
+                    </div>
+                </form>
+                <div class="col-6 d-flex">
+                    <img id="contact-form-img" src="src\images\letter.svg" class="m-auto pl-3" />
+                </div>
+            </div>
+        </section>
 
-      <!-- Contact Us section -->
-      <section class="my-5">
-        <h1 class="text-capitalize">Contact us</h1>
-        <div class="d-flex mt-2">
-        <form id="contact-form" class="col-6 p-0 mt-2 d-flex flex-column">
-          <div class="my-2">
-            <input type="text" class="form-control" placeholder="Name" />
-          </div>
-          <div class="my-2">
-            <input type="email" class="form-control" placeholder="Email" required/>
-          </div>
-          <div class="my-2">
-            <input type="text" class="form-control" placeholder="Subject" required/>
-          </div>
-          <div class="my-2">
-            <textarea type="text" class="form-control" rows="3" placeholder="Message"></textarea>
-          </div>
-          <div class="my-2 py-1">
-            <button id="contact-button" type="button" class="float-left text-center btn-danger text-uppercase">Submit</button>
-          </div>
-        </form>
-        <div class="col-6 d-flex">
-          <img id="contact-form-img" src="src\images\letter.svg" class="m-auto"/>
+        <!-- Scroll to Top Button-->
+        <button id="btn-scrollToTop" class="btn btn-danger">
+            <i class="material-icons">arrow_upward</i>
+        </button>
+
+    </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="d-flex flex-column align-items-center p-3">
+        <div class="py-1">&copy; Copyright 2019. Donate n Find.</div>
+        <div class="py-1">
+            <i class="fab fa-github px-1"><a class="pl-1" href="https://github.com/ashiyaman">Ashiya</a></i>
+            <i class="fab fa-github px-1"><a class="pl-1" href="https://github.com/snrelghgub">Taizy</a></i>
+            <i class="fab fa-github px-1"><a class="pl-1" href="https://github.com/DrewDen">Andrew</a></i>
         </div>
-      </div>
-      </section>
-
-      <!-- Scroll to Top Button-->
-      <button id="btn-scrollToTop" class="btn btn-danger">
-          <i class="material-icons">arrow_upward</i>
-      </button>
-      
-
-    </div>
-
-    </div>
+    </footer>
 
     <!--Donate Modal -->
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="donateModal">
         <div class="modal-dialog modal-lg mx-auto" id="modal-dialog-form">
             <div class="modal-content" id="model-content-form">
                 <div class="modal-header">
-                    <h1 class="modal-title">Donation Form</h1>
+                    <img class="modal-logo" src='src\logo_smaller.png' alt='logo' />
+                    <h2 class="modal-title">Donate Item</h2>
                     <button type="button" class="close" data-dismiss="modal">
                         <span>&times;</span>
                     </button>
@@ -165,7 +171,8 @@
         <div class="modal-dialog modal-dialog-centered mx-auto">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title">Find Items</h1>
+                    <img class="modal-logo" src='src\logo_smaller.png' alt='logo' /></a>
+                    <h2 class="modal-title">Find Items</h2>
                     <button type="button" class="close" data-dismiss="modal">
                         <span>&times;</span>
                     </button>
@@ -181,8 +188,9 @@
                         <li class="list-group-item mb-2 mr-2" data-filter="electronics">Electronics</li>
                         <li class="list-group-item mb-2 mr-2" data-filter="sports">Sports</li>
                         <li class="list-group-item mb-2 mr-2" data-filter="kitchen">Kitchen</li>
-                        <li class="list-group-item mb-2 mr-2" data-filter="music">Music</li>
+                        <li class="list-group-item mb-2 mr-2" data-filter="instruments">Instruments</li>
                         <li class="list-group-item mb-2 mr-2" data-filter="toys">Toys</li>
+                        <li class="list-group-item mb-2 mr-2" data-filter="others">Others</li>
                     </ul>
                     <div class="row donated-item-container">
                         <div class="col-md-6 mb-4 px-2 donated-item position-relative accessories sports">
@@ -199,7 +207,7 @@
                             <img src="src\images\donated-items\donated-image2.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Stephen	Hodges</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Stephen Hodges</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>stephen.hodges@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>USED Mens Dress Shoes Black UK9/US10 - Amazing quality shoes that I bought & used only once, hence the amazing condition</div>
                                 </div>
@@ -209,17 +217,17 @@
                             <img src="src\images\donated-items\donated-image3.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Stewart	Welchh</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Stewart Welchh</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>stewart.welch@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Cups and saucers, hardly used no chips or cracks, have been in storage for 10 years. Donating as I'm moving interstate</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-4 px-2 donated-item position-relative music">
+                        <div class="col-md-6 mb-4 px-2 donated-item position-relative instruments">
                             <img src="src\images\donated-items\donated-image4.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Jason	Simpson</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Jason Simpson</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>jason.simpson@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Classical guitar, Its about 3 years old & comes with the soft fitted case from Yamaha, perfect for someone chasing beautiful tone in one single instrument</div>
                                 </div>
@@ -239,7 +247,7 @@
                             <img src="src\images\donated-items\donated-image6.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Dan	Peters</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Dan Peters</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>dan.peters@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Blue knit sweater with white white stripes & a round neckline used last winter, long sleeves, size: L for men </div>
                                 </div>
@@ -249,7 +257,7 @@
                             <img src="src\images\donated-items\donated-image7.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Gabrielle	Pullman</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Gabrielle Pullman</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>gabrielle.pullman@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Black Leather women’s purse / hand bag still brand new & barely used.</div>
                                 </div>
@@ -259,7 +267,7 @@
                             <img src="src\images\donated-items\donated-image8.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Gavin	Carr</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Gavin Carr</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>gavin.carr@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Used 3 seater & 2 seater Black Sofas, high quality with soft top arm rests, PU Leather</div>
                                 </div>
@@ -269,7 +277,7 @@
                             <img src="src\images\donated-items\donated-image9.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Max	Blake</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Max Blake</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>max.blake@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Spring Hand Grip still in new condition to help with toning & increasing your strength with comfortable Grip and Control</div>
                                 </div>
@@ -279,7 +287,7 @@
                             <img src="src\images\donated-items\donated-image10.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Zoe	Springer</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Zoe Springer</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>zoe.springer@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Zenit-E Camera used for shooting family and friends with amazing ability to pull great color, exposure and auto white balance out of any crazy lighting situation</div>
                                 </div>
@@ -299,7 +307,7 @@
                             <img src="src\images\donated-items\donated-image12.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Bella	Peake</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Bella Peake</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>bella.peake@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Ninewest second hand high heeled designer shoes (unused & unwanted gift), size 10 available</div>
                                 </div>
@@ -309,7 +317,7 @@
                             <img src="src\images\donated-items\donated-image13.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Victoria	Edmunds</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Victoria Edmunds</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>victoria.edmunds@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Teddy bear still in great condition. The height is 13 cm and width is 12 cm.</div>
                                 </div>
@@ -319,7 +327,7 @@
                             <img src="src\images\donated-items\donated-image14.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Frank	Morrison</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Frank Morrison</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>frank.morrison@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Festina stainless steel Mens watch still in good condition, battery changed within the last 6 months.</div>
                                 </div>
@@ -329,25 +337,50 @@
                             <img src="src\images\donated-items\donated-image15.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Charles	Kerr</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Charles Kerr</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>charles.kerr@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Philips Iron purchased last year & still in excellent condition available for anyone who needs it</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-4 px-2 donated-item position-relative music">
+                        <div class="col-md-6 mb-4 px-2 donated-item position-relative instruments">
                             <img src="src\images\donated-items\donated-image16.jpg" class="w-100" />
                             <div class="mask mx-2">
                                 <div class="my-auto w-100">
-                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Sonia	Kerr</div>
+                                    <div class="p-2"><span class="font-weight-bold">Donor Name: </span>Sonia Kerr</div>
                                     <div class="p-2"><span class="font-weight-bold">Contact: </span>sonia.kerr@xyz.com</div>
                                     <div class="p-2"><span class="item-description font-weight-bold">Description: </span>Piano no longer used but still in excellent condition</div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 my-2 others">
+                          <p class="text-center py-2">No items found.</p>
+                        </div>
 
                     </div>
 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- submit message -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="modal-logo" src='src\logo_smaller.png' alt='logo' />
+                    <h2 class="modal-title" id="exampleModalCenterTitle">Thank you!</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for your message!
+                        <br> One of our representatives shall get back to you shortly.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
