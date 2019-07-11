@@ -228,6 +228,10 @@ footer {
   a {
     color:inherit;
   }
+  a:hover {
+    color: inherit;
+    cursor: pointer;
+  }
 }
 
 /********** Media queries ****************/
