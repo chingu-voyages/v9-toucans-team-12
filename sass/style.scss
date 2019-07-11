@@ -41,9 +41,9 @@
     flex-direction: row;
     align-items: center;
     .modal-logo{
-      margin-right: 10px; 
+      margin-right: 10px;
     }
-  } 
+  }
 
 
 /***----Page Header---***/
@@ -221,6 +221,14 @@
   height: 100%;
 }
 
+/********** Footer *****************/
+footer {
+  background-color: #efeeee;
+  a {
+    color:inherit;
+  }
+}
+
 /********** Media queries ****************/
 @media only screen and (min-width: 450px) {
   h2 {
@@ -231,14 +239,14 @@
 
 /****CSS for Scroll To Top button****/
 #btn-scrollToTop{
-  position: fixed; 
-  right: 15px; 
-  bottom: 15px; 
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
   width: 50px;
-  height: 50px; 
-  border-radius: 50%; 
+  height: 50px;
+  border-radius: 50%;
 
-  transition: background-color .3s, 
+  transition: background-color .3s,
   opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
