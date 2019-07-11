@@ -164,14 +164,15 @@
     div * {
       border-bottom: 1px solid #adadad;
     }
-    #contact-form-img {
-      width: 30%;
-    }
     #contact-button {
       border: none;
       border-radius: 5px;
       height: 40px;
     }
+}
+
+#contact-form-img {
+  width: 70%;
 }
 
 /******************* Styles for Find form **************************/
@@ -233,6 +234,9 @@ footer {
 @media only screen and (min-width: 450px) {
   h2 {
     font-size: 2.5rem;
+  }
+  #contact-form-img {
+    width: 35%;
   }
 }
 
