@@ -1,5 +1,4 @@
-# Project Name: Donate n Find [Chingu Team Project]
-Donate n Find | Voyage-9: <br /> 
+# Donate n Find | Voyage-9:  
 https://chingu-voyages.github.io/v9-toucans-team-12/ 
 
 ## Project Overview 
@@ -18,11 +17,11 @@ Our project is the Front-end for Donate n Find, our own new invented online non-
 - User shall be required to tick & agree to the terms & conditions imposed on them before submitting their item donation for display on Donate n Find 
 - User shall be able to simply scroll through & find items they need & wish to collect from another user
 
-## Project Team 
+## Project Team  
 
-[Ashiya](https://github.com/ashiyaman) <br />
-[Taizy](https://github.com/snrelghgub) <br />
-[Andrew](https://github.com/DrewDen)
+:octocat: [Ashiya](https://github.com/ashiyaman) <br />
+:octocat: [Taizy](https://github.com/snrelghgub) <br />
+:octocat: [Andrew](https://github.com/DrewDen)
 
 
 ## Project Technology Stack
@@ -40,7 +39,7 @@ Our project is the Front-end for Donate n Find, our own new invented online non-
 - We learnt how to help each other & teach each other more about the technologies we picked for our project - jQuery, Bootstrap & Sass - so we can all better meet the needs of our project within the best of our ability  
 - We learnt how to use a responsive, mobile-first approach for the development of our project by making use of web development inspection tools, CSS media queries & Bootstrap's grid system & classes to ensure the compability of our project on modern tablet & mobile devices
 - We built new experience in the development of a new project from scratch & we also learnt the do's & dont's involved in taking up such a challenge 
-- We learnt how to set up & follow a development workflow which always gave everyone in our the team a chance to share their ideas & voice their opinions & in times of conflicts we learnt how to speak up & still be respectful to one another 
+- We learnt how to set up & follow a development workflow which always gave everyone on our team a chance to share their ideas & voice their opinions & in times of conflicts we learnt how to speak up & still be respectful to one another 
 - We built new hands-on experience making pull requests using GitHub to effectively contribute to our project & also built new hands-on experience in resolving merge conflicts locally within our chosen development enviroment before merging our changes to our development branch in our remote repository
 - We learnt how to work & communicate more effectively within a team & with the valuable information provided to us in Chingu's handbook, we learnt how to develop our project using the Scrum/Agile methodology by succesfuly completing our sprint tasks each weekly sprint over a 6 weeks period of time 
 - We learnt & realised that we were lucky to be in a team where we all shared the same vision of completing a project to make the best out of the opportunity which has been given to us & successfully deliver our new project on time
