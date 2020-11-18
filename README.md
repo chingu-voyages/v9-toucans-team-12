@@ -4,7 +4,8 @@ https://chingu-voyages.github.io/v9-toucans-team-12/
 ## Project Overview 
 Our project is the Front-end for Donate n Find, our own new invented online non-profit organization providing a new platform for people donating and/or seeking items available for donation. Offering a possession no longer needed/or used to gratify someone else's need is a GREAT feeling. Sports equipment or clothing your children outgrew, kitchen appliances you don’t use anymore or collectables you want to pass along. If you think about it, there are likely many things in your possession no use to you, but that would totally make someone else's day. We created Donate n Find to pay forward the spirit of giving and receiving and to also provide a no-hassle process for donating and finding items, to make the process uncomplicated for the community. <br />
 
-![Donate n Find preview](https://lh3.googleusercontent.com/tXW0MgQfs2r4VD2rYk9FoytZFVyO6Xr4ZW1vBpovhUqD1kSl20-KFCbmqjWHZ51wnMB4OnAYnUw)
+![donate-n-find-preview](https://user-images.githubusercontent.com/48052195/99530854-9775cd80-29ed-11eb-980e-6b0a9d56dcc1.png)
+
 
 ## Project Requirements
 
